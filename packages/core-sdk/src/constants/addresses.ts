@@ -2,9 +2,10 @@ import { AddressMap } from '../types'
 import { ChainId } from '../enums'
 
 export const FANTA_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0xB7814C8012EC31c10A59FF07fCf852328D2C72de',
+
   // TODO
   [ChainId.EVMOS]: '',
-  [ChainId.RINKEBY]: '',
   [ChainId.EVMOS_TESTNET]: '',
 }
 
@@ -51,6 +52,7 @@ export const USDC_ADDRESS: AddressMap = {
   [ChainId.TELOS]: '0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b',
   [ChainId.FUSE]: '0x620fd5fa44BE6af63715Ef4E65DDFA0387aD13F5',
 
+  [ChainId.RINKEBY]: '0x52773ce0b2F4a47F61e3dAe427e347687B92F106',
   // TODO
   [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '',
@@ -73,6 +75,8 @@ export const USD_ADDRESS: AddressMap = {
   [ChainId.CELO]: '0x765DE816845861e75A25fCA122bb6898B8B1282a',
   [ChainId.TELOS]: USDC_ADDRESS[ChainId.TELOS],
   [ChainId.FUSE]: USDC_ADDRESS[ChainId.FUSE],
+
+  [ChainId.RINKEBY]: USDC_ADDRESS[ChainId.RINKEBY],
 
   // TODO
   // [ChainId.EVMOS]: '',
@@ -115,7 +119,6 @@ export const WEVMOS_ADDRESS: AddressMap = {
 export const WNATIVE_ADDRESS: AddressMap = {
   [ChainId.ETHEREUM]: WETH9_ADDRESS[ChainId.ETHEREUM],
   [ChainId.ROPSTEN]: WETH9_ADDRESS[ChainId.ROPSTEN],
-  [ChainId.RINKEBY]: WETH9_ADDRESS[ChainId.RINKEBY],
   [ChainId.GÖRLI]: WETH9_ADDRESS[ChainId.GÖRLI],
   [ChainId.KOVAN]: WETH9_ADDRESS[ChainId.KOVAN],
   [ChainId.ARBITRUM]: WETH9_ADDRESS[ChainId.ARBITRUM],
@@ -141,6 +144,8 @@ export const WNATIVE_ADDRESS: AddressMap = {
   [ChainId.MOONRIVER]: '0xf50225a84382c74CbdeA10b0c176f71fc3DE0C4d',
   [ChainId.FUSE]: '0x0BE9e53fd7EDaC9F859882AfdDa116645287C629',
   [ChainId.TELOS]: '0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E',
+
+  [ChainId.RINKEBY]: WEVMOS_ADDRESS[ChainId.RINKEBY],
 
   [ChainId.EVMOS]: WEVMOS_ADDRESS[ChainId.EVMOS],
   [ChainId.EVMOS_TESTNET]: WEVMOS_ADDRESS[ChainId.EVMOS_TESTNET],
@@ -193,42 +198,47 @@ export const USDT_ADDRESS: AddressMap = {
 }
 
 export const FACTORY_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0xC32f570CF3a664c8Fde3c1CBe4D0971110D173bf',
+
   // TODO
   [ChainId.EVMOS]: '',
-  [ChainId.RINKEBY]: '',
   [ChainId.EVMOS_TESTNET]: '',
 }
 
 export const ROUTER_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0x8b900fAb03Da483bE613A39Dc7Bd3E7D052cDbD1',
+
   // TODO
   [ChainId.EVMOS]: '',
-  [ChainId.RINKEBY]: '',
   [ChainId.EVMOS_TESTNET]: '',
 }
 
 export const BAR_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0xD39e4C415B5087bdC90D1343ac7F7e30c3847517',
+
   // TODO
   [ChainId.EVMOS]: '',
-  [ChainId.RINKEBY]: '',
   [ChainId.EVMOS_TESTNET]: '',
 }
 
 export const CHEF_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0xB6e706784d5e60F967e2680B0BF08fbe17E32a7A',
+
   // TODO
   [ChainId.EVMOS]: '',
-  [ChainId.RINKEBY]: '',
   [ChainId.EVMOS_TESTNET]: '',
 }
 
 export const MAKER_ADDRESS: AddressMap = {
+  [ChainId.RINKEBY]: '0x708625b300D043c7f3e14409BA38b7AD7C44126C',
+
   // TODO
   [ChainId.EVMOS]: '',
-  [ChainId.RINKEBY]: '',
   [ChainId.EVMOS_TESTNET]: '',
 }
 
 export const TIMELOCK_ADDRESS: AddressMap = {
-  [ChainId.ETHEREUM]: '0x9a8541Ddf3a932a9A922B607e9CF7301f1d47bD1',
+  [ChainId.RINKEBY]: '0x50C6d95390Cb9369Fe8d09b361DF0322cDF3D017',
 }
 
 // TODO

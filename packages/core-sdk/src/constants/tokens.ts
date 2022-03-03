@@ -1,4 +1,4 @@
-import { USDC_ADDRESS, USD_ADDRESS, WETH9_ADDRESS, WEVMOS_ADDRESS, WNATIVE_ADDRESS, FANTA_ADDRESS } from './addresses'
+import { FANTA_ADDRESS, USDC_ADDRESS, USD_ADDRESS, WETH9_ADDRESS, WEVMOS_ADDRESS, WNATIVE_ADDRESS } from './addresses'
 
 import { ChainId } from '../enums'
 import { Token } from '../entities/Token'
@@ -20,6 +20,8 @@ export const USDC: TokenMap = {
   [ChainId.AVALANCHE]: new Token(ChainId.AVALANCHE, USDC_ADDRESS[ChainId.AVALANCHE], 6, 'USDC', 'USD Coin'),
   [ChainId.FUSE]: new Token(ChainId.FUSE, USDC_ADDRESS[ChainId.FUSE], 6, 'USDC', 'USD Coin'),
   [ChainId.TELOS]: new Token(ChainId.TELOS, USDC_ADDRESS[ChainId.TELOS], 6, 'USDC', 'USD Coin'),
+
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, USDC_ADDRESS[ChainId.RINKEBY], 6, 'USDC', 'USD Coin'),
 
   // TODO
   // [ChainId.EVMOS]: new Token(),
@@ -60,7 +62,7 @@ export const WETH9: TokenMap = {
 
 export const WEVMOS: TokenMap = {
   // for test
-  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, WEVMOS_ADDRESS[ChainId.RINKEBY], 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, WEVMOS_ADDRESS[ChainId.RINKEBY], 18, 'WEVMOS', 'Wrapped Evmos'),
 
   // [ChainId.EVMOS]: new Token(ChainId.EVMOS, WEVMOS_ADDRESS[ChainId.EVMOS], 18, 'WEVMOS', 'Wrapped Evmos'),
   // [ChainId.EVMOS_TESTNET]: new Token(ChainId.EVMOS_TESTNET, WEVMOS_ADDRESS[ChainId.EVMOS_TESTNET], 18, 'WEVMOS', 'Wrapped Evmos'),
@@ -69,7 +71,6 @@ export const WEVMOS: TokenMap = {
 export const WNATIVE: TokenMap = {
   [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
   [ChainId.ROPSTEN]: WETH9[ChainId.ROPSTEN],
-  [ChainId.RINKEBY]: WETH9[ChainId.RINKEBY],
   [ChainId.GÖRLI]: WETH9[ChainId.GÖRLI],
   [ChainId.KOVAN]: WETH9[ChainId.KOVAN],
   [ChainId.FANTOM]: new Token(ChainId.FANTOM, WNATIVE_ADDRESS[ChainId.FANTOM], 18, 'WFTM', 'Wrapped FTM'),
@@ -150,13 +151,16 @@ export const WNATIVE: TokenMap = {
   [ChainId.FUSE]: new Token(ChainId.FUSE, WNATIVE_ADDRESS[ChainId.FUSE], 18, 'WFUSE', 'Wrapped Fuse'),
   [ChainId.TELOS]: new Token(ChainId.TELOS, WNATIVE_ADDRESS[ChainId.TELOS], 18, 'WTLOS', 'Wrapped Telos'),
 
+  // for test
+  [ChainId.RINKEBY]: WEVMOS[ChainId.RINKEBY],
+
   // [ChainId.EVMOS]: WEVMOS[ChainId.EVMOS],
   // [ChainId.EVMOS_TESTNET]: WEVMOS[ChainId.EVMOS_TESTNET],
 }
 
 export const FANTA: ChainTokenMap = {
   // for test
-  // [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, FANTA_ADDRESS[ChainId.RINKEBY], 18, 'FANTA', 'FantasticToken'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, FANTA_ADDRESS[ChainId.RINKEBY], 18, 'FANTA', 'FantasticToken'),
 
   // [ChainId.EVMOS]: new Token(ChainId.EVMOS, FANTA_ADDRESS[ChainId.EVMOS], 18, 'FANTA', 'FantasticToken'),
   // [ChainId.EVMOS_TESTNET]: new Token(ChainId.EVMOS_TESTNET, FANTA_ADDRESS[ChainId.EVMOS_TESTNET], 18, 'FANTA', 'FantasticToken'),
