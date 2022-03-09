@@ -2,7 +2,7 @@ import { Currency } from '../Currency'
 import { NativeCurrency } from '../NativeCurrency'
 import { Token } from '../Token'
 import { WNATIVE } from '../../constants/tokens'
-import invariant from 'tiny-invariant'
+// import invariant from 'tiny-invariant'
 
 export class Evmos extends NativeCurrency {
   protected constructor(chainId: number) {
@@ -11,7 +11,8 @@ export class Evmos extends NativeCurrency {
 
   public get wrapped(): Token {
     const wnative = WNATIVE[this.chainId]
-    invariant(!!wnative, 'WRAPPED')
+    // TODO
+    // invariant(!!wnative, 'WRAPPED')
     return wnative
   }
 
