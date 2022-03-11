@@ -6,7 +6,7 @@ export const FANTA_ADDRESS: AddressMap = {
 
   // TODO
   [ChainId.EVMOS]: '',
-  [ChainId.EVMOS_TESTNET]: '0x65efe10B1E14C3411cd1646F3D7bEdfbB8D660cA',
+  [ChainId.EVMOS_TESTNET]: '0xD39e4C415B5087bdC90D1343ac7F7e30c3847517',
 }
 
 // TODO
@@ -198,7 +198,7 @@ export const FACTORY_ADDRESS: AddressMap = {
 
   // TODO
   // [ChainId.EVMOS]: '',
-  [ChainId.EVMOS_TESTNET]: '0x7808fFA2536ebda596FA928Db7daAD78DF3e628b',
+  [ChainId.EVMOS_TESTNET]: '0xB6e706784d5e60F967e2680B0BF08fbe17E32a7A',
 }
 
 export const ROUTER_ADDRESS: AddressMap = {
@@ -206,7 +206,7 @@ export const ROUTER_ADDRESS: AddressMap = {
 
   // TODO
   // [ChainId.EVMOS]: '',
-  [ChainId.EVMOS_TESTNET]: '0x83F8160195eCF30e2c424e4BFcB0b3bBd960a710',
+  [ChainId.EVMOS_TESTNET]: '0x708625b300D043c7f3e14409BA38b7AD7C44126C',
 }
 
 export const BAR_ADDRESS: AddressMap = {
@@ -214,7 +214,7 @@ export const BAR_ADDRESS: AddressMap = {
 
   // TODO
   // [ChainId.EVMOS]: '',
-  [ChainId.EVMOS_TESTNET]: '0x4FCcbF81621D783350dBB3e04C3651b112402A86',
+  [ChainId.EVMOS_TESTNET]: '0x633f1c68385821963bE4e128d5559330BD44dEbd',
 }
 
 export const CHEF_ADDRESS: AddressMap = {
@@ -222,7 +222,7 @@ export const CHEF_ADDRESS: AddressMap = {
 
   // TODO
   // [ChainId.EVMOS]: '',
-  [ChainId.EVMOS_TESTNET]: '0x10f36e3462A68A66a6ECb0a33205d03ee0cAcc64',
+  [ChainId.EVMOS_TESTNET]: '0x50C6d95390Cb9369Fe8d09b361DF0322cDF3D017',
 }
 
 export const MAKER_ADDRESS: AddressMap = {
@@ -230,7 +230,7 @@ export const MAKER_ADDRESS: AddressMap = {
 
   // TODO
   // [ChainId.EVMOS]: '',
-  [ChainId.EVMOS_TESTNET]: '0xb19815125e97c5b41CD48d2CC36D05F8E09bC0a7',
+  [ChainId.EVMOS_TESTNET]: '0x34E980daC72a3bFEEF05e80A0b145353aa0c076B',
 }
 
 export const TIMELOCK_ADDRESS: AddressMap = {
