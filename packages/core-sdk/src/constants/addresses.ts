@@ -3,36 +3,15 @@ import { ChainId } from '../enums'
 
 export const FANTA_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xB7814C8012EC31c10A59FF07fCf852328D2C72de',
+  [ChainId.GÖRLI]: '0xa1e386c778ECB4911f2Db2039d05deDc98f223dB',
 
   // TODO
   [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0xD39e4C415B5087bdC90D1343ac7F7e30c3847517',
-}
 
-// TODO
-// export const SUSHI_ADDRESS: AddressMap = {
-//   [ChainId.ETHEREUM]: '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2',
-//   [ChainId.ROPSTEN]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
-//   [ChainId.RINKEBY]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
-//   [ChainId.GÖRLI]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
-//   [ChainId.KOVAN]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
-//   [ChainId.FANTOM]: '0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
-//   [ChainId.MATIC]: '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a',
-//   [ChainId.XDAI]: '0x2995D1317DcD4f0aB89f4AE60F3f020A4F17C7CE',
-//   [ChainId.BSC]: '0x947950BcC74888a40Ffa2593C5798F11Fc9124C4',
-//   [ChainId.ARBITRUM]: '0xd4d42F0b6DEF4CE0383636770eF773390d85c61A',
-//   [ChainId.AVALANCHE]: '0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76',
-//   [ChainId.HECO]: '0x52E00B2dA5Bd7940fFe26B609A42F957f31118D5',
-//   [ChainId.HARMONY]: '0xBEC775Cb42AbFa4288dE81F387a9b1A3c4Bc552A',
-//   [ChainId.OKEX]: '0x2218E0D5E0173769F5b4939a3aE423f7e5E4EAB7',
-//   [ChainId.OKEX_TESTNET]: '',
-//   [ChainId.PALM]: '',
-//   [ChainId.PALM_TESTNET]: '',
-//   [ChainId.MOONRIVER]: '0xf390830DF829cf22c53c8840554B98eafC5dCBc2',
-//   [ChainId.CELO]: '0x29dFce9c22003A4999930382Fd00f9Fd6133Acd1',
-//   [ChainId.TELOS]: '0x922D641a426DcFFaeF11680e5358F34d97d112E1',
-//   [ChainId.FUSE]: '0x90708b20ccC1eb95a4FA7C8b18Fd2C22a0Ff9E78',
-// }
+  // TODO
+  [ChainId.HYPERSPACE]: '',
+}
 
 export const USDC_ADDRESS: AddressMap = {
   [ChainId.ETHEREUM]: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
@@ -56,6 +35,8 @@ export const USDC_ADDRESS: AddressMap = {
   // TODO
   [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x412576738928c7a3dDA5c8AdF211C5C56054781b',
+  [ChainId.GÖRLI]: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F',
+  [ChainId.HYPERSPACE]: '',
 }
 
 export const USD_ADDRESS: AddressMap = {
@@ -80,6 +61,9 @@ export const USD_ADDRESS: AddressMap = {
   // TODO
   [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: USDC_ADDRESS[ChainId.EVMOS_TESTNET],
+
+  [ChainId.GÖRLI]: USDC_ADDRESS[ChainId.GÖRLI],
+  [ChainId.HYPERSPACE]: USDC_ADDRESS[ChainId.HYPERSPACE],
 }
 
 export const WETH9_ADDRESS: AddressMap = {
@@ -109,6 +93,10 @@ export const WEVMOS_ADDRESS: AddressMap = {
   // TODO
   [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x7F865d113DA1cD186271Fa0E5170753733Cf4ED9',
+}
+
+export const WFIL_ADDRESS: AddressMap = {
+  [ChainId.HYPERSPACE]: '',
 }
 
 export const WNATIVE_ADDRESS: AddressMap = {
@@ -144,6 +132,8 @@ export const WNATIVE_ADDRESS: AddressMap = {
   // TODO
   [ChainId.EVMOS]: WEVMOS_ADDRESS[ChainId.EVMOS],
   [ChainId.EVMOS_TESTNET]: WEVMOS_ADDRESS[ChainId.EVMOS_TESTNET],
+
+  [ChainId.HYPERSPACE]: WFIL_ADDRESS[ChainId.HYPERSPACE],
 }
 
 export const DAI_ADDRESS: AddressMap = {
@@ -192,79 +182,93 @@ export const USDT_ADDRESS: AddressMap = {
   // [ChainId.EVMOS_TESTNET]: '',
 }
 
-
 export const FACTORY_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xC32f570CF3a664c8Fde3c1CBe4D0971110D173bf',
+  [ChainId.GÖRLI]: '0xA6f571504eb6F6d49E540099431741Ec956dDf69',
 
   // TODO
   // [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0xB6e706784d5e60F967e2680B0BF08fbe17E32a7A',
+
+  [ChainId.HYPERSPACE]: '',
 }
 
 export const ROUTER_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0x0795cFB5b6bD6EAe13BB12aF83D8B6338AA35B2b',
+  [ChainId.GÖRLI]: '0x349c7328c4f193df57264d7d384f5bEA52105cc7',
 
   // TODO
   // [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x708625b300D043c7f3e14409BA38b7AD7C44126C',
+
+  [ChainId.HYPERSPACE]: '',
 }
 
 export const BAR_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xD39e4C415B5087bdC90D1343ac7F7e30c3847517',
+  [ChainId.GÖRLI]: '0xc0ad57AEE174D6924E7a8a848c763D09032a1172',
 
   // TODO
   // [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x633f1c68385821963bE4e128d5559330BD44dEbd',
+
+  [ChainId.HYPERSPACE]: '',
 }
 
 export const CHEF_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xB6e706784d5e60F967e2680B0BF08fbe17E32a7A',
+  [ChainId.GÖRLI]: '0x3485EAE811F63E480eF5cC7CE245Cf33Ae13cC86',
 
   // TODO
   // [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x50C6d95390Cb9369Fe8d09b361DF0322cDF3D017',
+
+  // TODO
+  [ChainId.HYPERSPACE]: '',
 }
 
 export const MAKER_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0x708625b300D043c7f3e14409BA38b7AD7C44126C',
+  [ChainId.GÖRLI]: '0x5648F8fb9D9Cb02deD472De2DADd2fBe9DB24757',
 
   // TODO
   // [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x34E980daC72a3bFEEF05e80A0b145353aa0c076B',
+
+  [ChainId.HYPERSPACE]: '',
 }
 
+// TODO
 export const TIMELOCK_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0x50C6d95390Cb9369Fe8d09b361DF0322cDF3D017',
 }
 
 // TODO
-export const BENTOBOX_ADDRESS: AddressMap = {
-}
+export const BENTOBOX_ADDRESS: AddressMap = {}
 
 // TODO
-export const KASHI_ADDRESS: AddressMap = {
-}
+export const KASHI_ADDRESS: AddressMap = {}
 
 // TODO
-export const SUSHISWAP_SWAPPER_ADDRESS: AddressMap = {
-}
+export const SUSHISWAP_SWAPPER_ADDRESS: AddressMap = {}
 
 // TODO
-export const SUSHISWAP_MULTISWAPPER_ADDRESS: AddressMap = {
-}
+export const SUSHISWAP_MULTISWAPPER_ADDRESS: AddressMap = {}
 
 // TODO
-export const SUSHISWAP_MULTI_EXACT_SWAPPER_ADDRESS: AddressMap = {
-}
+export const SUSHISWAP_MULTI_EXACT_SWAPPER_ADDRESS: AddressMap = {}
 
 // TODO
-export const PEGGED_ORACLE_ADDRESS = '0x6cbfbB38498Df0E1e7A4506593cDB02db9001564'
+export const PEGGED_ORACLE_ADDRESS =
+  '0x6cbfbB38498Df0E1e7A4506593cDB02db9001564'
 
 // TODO
-export const SUSHISWAP_TWAP_0_ORACLE_ADDRESS = '0x66F03B0d30838A3fee971928627ea6F59B236065'
+export const SUSHISWAP_TWAP_0_ORACLE_ADDRESS =
+  '0x66F03B0d30838A3fee971928627ea6F59B236065'
 
 // TODO
-export const SUSHISWAP_TWAP_1_ORACLE_ADDRESS = '0x0D51b575591F8f74a2763Ade75D3CDCf6789266f'
+export const SUSHISWAP_TWAP_1_ORACLE_ADDRESS =
+  '0x0D51b575591F8f74a2763Ade75D3CDCf6789266f'
 
 export const CHAINLINK_ORACLE_ADDRESS: AddressMap = {
   [ChainId.ETHEREUM]: '0x00632CFe43d8F9f8E6cD0d39Ffa3D4fa7ec73CFB',
@@ -291,6 +295,9 @@ export const ENS_REGISTRAR_ADDRESS: AddressMap = {
   [ChainId.GÖRLI]: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e',
   [ChainId.ROPSTEN]: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e',
   [ChainId.RINKEBY]: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e',
+
+  // TODO
+  // [ChainId.HYPERSPACE]: '',
 }
 
 export const ZAPPER_ADDRESS: AddressMap = {
@@ -323,6 +330,13 @@ export const MULTICALL2_ADDRESS: AddressMap = {
   // TODO
   // [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x041Cfe5c38DA68A5837774390DFb4f729286D3B2',
+
+  [ChainId.HYPERSPACE]: '',
+}
+
+export const MULTICALL3_ADDRESS: AddressMap = {
+  [ChainId.GÖRLI]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.HYPERSPACE]: '',
 }
 
 export const BALANCE_FETCHER_ADDRESS: AddressMap = {
@@ -337,5 +351,4 @@ export const BALANCE_FETCHER_ADDRESS: AddressMap = {
 }
 
 // TODO
-export const MULTISIG_ADDRESS: AddressMap = {
-}
+export const MULTISIG_ADDRESS: AddressMap = {}

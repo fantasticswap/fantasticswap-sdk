@@ -30,7 +30,8 @@ export enum ChainKey {
   XDAI = 'xdai',
   EVMOS = 'evmos',
   EVMOS_TESTNET = 'evmos-testnet',
-  
+  HYPERSPACE = 'hyperspace',
+
   // Just for test
   HARDHAT = 'hardhat',
 }

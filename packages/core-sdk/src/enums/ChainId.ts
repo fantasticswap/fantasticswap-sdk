@@ -30,5 +30,7 @@ export enum ChainId {
   TELOS = 40,
   EVMOS = 9001,
   EVMOS_TESTNET = 9000,
+  HYPERSPACE = 3141,
+
   HARDHAT = 31337,
 }

@@ -1,3 +1,5 @@
-const { default: config } = require('@sushiswap/prettier-config')
-
-module.exports = config
+/** @type {import('prettier').Config} */
+module.exports = {
+  singleQuote: true,
+  semi: false,
+}

@@ -14,6 +14,7 @@ import {
   Palm,
   xDai,
   Telos,
+  Filecoin,
 } from '../entities/Native'
 import { NativeMap } from '../types'
 import { ChainId } from '../enums'
@@ -47,7 +48,7 @@ export const NATIVE: NativeMap = {
   [ChainId.MOONRIVER]: Movr.onChain(ChainId.MOONRIVER),
   [ChainId.FUSE]: Fuse.onChain(ChainId.FUSE),
   [ChainId.TELOS]: Telos.onChain(ChainId.TELOS),
-  
   [ChainId.EVMOS]: Evmos.onChain(ChainId.EVMOS),
   [ChainId.EVMOS_TESTNET]: Evmos.onChain(ChainId.EVMOS_TESTNET),
+  [ChainId.HYPERSPACE]: Filecoin.onChain(ChainId.HYPERSPACE),
 }

@@ -89,12 +89,18 @@ export abstract class Router {
     invariant(!('ttl' in options) || options.ttl > 0, 'TTL')
 
     const to: string = validateAndParseAddress(options.recipient)
-    const amountIn: string = toHex(trade.maximumAmountIn(options.allowedSlippage))
-    const amountOut: string = toHex(trade.minimumAmountOut(options.allowedSlippage))
+    const amountIn: string = toHex(
+      trade.maximumAmountIn(options.allowedSlippage)
+    )
+    const amountOut: string = toHex(
+      trade.minimumAmountOut(options.allowedSlippage)
+    )
     const path: string[] = trade.route.path.map((token: Token) => token.address)
     const deadline =
       'ttl' in options
-        ? `0x${(Math.floor(new Date().getTime() / 1000) + options.ttl).toString(16)}`
+        ? `0x${(Math.floor(new Date().getTime() / 1000) + options.ttl).toString(
+            16
+          )}`
         : `0x${options.deadline.toString(16)}`
 
     const useFeeOnTransfer = Boolean(options.feeOnTransfer)
@@ -105,12 +111,16 @@ export abstract class Router {
     switch (trade.tradeType) {
       case TradeType.EXACT_INPUT:
         if (etherIn) {
-          methodName = useFeeOnTransfer ? 'swapExactETHForTokensSupportingFeeOnTransferTokens' : 'swapExactETHForTokens'
+          methodName = useFeeOnTransfer
+            ? 'swapExactETHForTokensSupportingFeeOnTransferTokens'
+            : 'swapExactETHForTokens'
           // (uint amountOutMin, address[] calldata path, address to, uint deadline)
           args = [amountOut, path, to, deadline]
           value = amountIn
         } else if (etherOut) {
-          methodName = useFeeOnTransfer ? 'swapExactTokensForETHSupportingFeeOnTransferTokens' : 'swapExactTokensForETH'
+          methodName = useFeeOnTransfer
+            ? 'swapExactTokensForETHSupportingFeeOnTransferTokens'
+            : 'swapExactTokensForETH'
           // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
           args = [amountIn, amountOut, path, to, deadline]
           value = ZERO_HEX
