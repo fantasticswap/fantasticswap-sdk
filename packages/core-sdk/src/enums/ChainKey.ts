@@ -30,6 +30,7 @@ export enum ChainKey {
   XDAI = 'xdai',
   EVMOS = 'evmos',
   EVMOS_TESTNET = 'evmos-testnet',
+  SEPOLIA = 'sepolia',
   HYPERSPACE = 'hyperspace',
 
   // Just for test

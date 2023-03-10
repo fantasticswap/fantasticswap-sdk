@@ -50,5 +50,6 @@ export const NATIVE: NativeMap = {
   [ChainId.TELOS]: Telos.onChain(ChainId.TELOS),
   [ChainId.EVMOS]: Evmos.onChain(ChainId.EVMOS),
   [ChainId.EVMOS_TESTNET]: Evmos.onChain(ChainId.EVMOS_TESTNET),
+  [ChainId.SEPOLIA]: Ether.onChain(ChainId.SEPOLIA),
   [ChainId.HYPERSPACE]: Filecoin.onChain(ChainId.HYPERSPACE),
 }

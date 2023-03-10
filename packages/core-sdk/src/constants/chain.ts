@@ -33,6 +33,7 @@ export const CHAIN_KEY: { [chainId: number]: ChainKey } = {
   [ChainId.TELOS]: ChainKey.TELOS,
   [ChainId.EVMOS]: ChainKey.EVMOS,
   [ChainId.EVMOS_TESTNET]: ChainKey.EVMOS_TESTNET,
+  [ChainId.SEPOLIA]: ChainKey.SEPOLIA,
   [ChainId.HYPERSPACE]: ChainKey.HYPERSPACE,
 
   // Just for test

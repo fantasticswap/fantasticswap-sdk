@@ -4,6 +4,7 @@ import { ChainId } from '../enums'
 export const FANTA_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xB7814C8012EC31c10A59FF07fCf852328D2C72de',
   [ChainId.GÖRLI]: '0xa1e386c778ECB4911f2Db2039d05deDc98f223dB',
+  [ChainId.SEPOLIA]: '0x7A460c8983e5016aE171E8114f0527959F033047',
 
   // TODO
   [ChainId.EVMOS]: '',
@@ -36,6 +37,7 @@ export const USDC_ADDRESS: AddressMap = {
   [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x412576738928c7a3dDA5c8AdF211C5C56054781b',
   [ChainId.GÖRLI]: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F',
+  [ChainId.SEPOLIA]: '0x320ae55a5826c87165a8cf9c08621fDd48DdeCa8', // Just ERC20
   [ChainId.HYPERSPACE]: '',
 }
 
@@ -63,6 +65,7 @@ export const USD_ADDRESS: AddressMap = {
   [ChainId.EVMOS_TESTNET]: USDC_ADDRESS[ChainId.EVMOS_TESTNET],
 
   [ChainId.GÖRLI]: USDC_ADDRESS[ChainId.GÖRLI],
+  [ChainId.SEPOLIA]: USDC_ADDRESS[ChainId.SEPOLIA],
   [ChainId.HYPERSPACE]: USDC_ADDRESS[ChainId.HYPERSPACE],
 }
 
@@ -87,6 +90,8 @@ export const WETH9_ADDRESS: AddressMap = {
   [ChainId.MOONRIVER]: '0x639A647fbe20b6c8ac19E48E2de44ea792c62c5C',
   [ChainId.TELOS]: '0xfA9343C3897324496A05fC75abeD6bAC29f8A40f',
   [ChainId.FUSE]: '0xa722c13135930332Eb3d749B2F0906559D2C5b99',
+
+  [ChainId.SEPOLIA]: '0xCc686112794b46689e040E9022736DC7254C9745',
 }
 
 export const WEVMOS_ADDRESS: AddressMap = {
@@ -133,6 +138,7 @@ export const WNATIVE_ADDRESS: AddressMap = {
   [ChainId.EVMOS]: WEVMOS_ADDRESS[ChainId.EVMOS],
   [ChainId.EVMOS_TESTNET]: WEVMOS_ADDRESS[ChainId.EVMOS_TESTNET],
 
+  [ChainId.SEPOLIA]: WETH9_ADDRESS[ChainId.SEPOLIA],
   [ChainId.HYPERSPACE]: WFIL_ADDRESS[ChainId.HYPERSPACE],
 }
 
@@ -185,6 +191,7 @@ export const USDT_ADDRESS: AddressMap = {
 export const FACTORY_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xC32f570CF3a664c8Fde3c1CBe4D0971110D173bf',
   [ChainId.GÖRLI]: '0xA6f571504eb6F6d49E540099431741Ec956dDf69',
+  [ChainId.SEPOLIA]: '0x661cf851EB9158001759A9FB35C4294B60957bf7',
 
   // TODO
   // [ChainId.EVMOS]: '',
@@ -196,6 +203,7 @@ export const FACTORY_ADDRESS: AddressMap = {
 export const ROUTER_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0x0795cFB5b6bD6EAe13BB12aF83D8B6338AA35B2b',
   [ChainId.GÖRLI]: '0x349c7328c4f193df57264d7d384f5bEA52105cc7',
+  [ChainId.SEPOLIA]: '0x8aba5c88758Dae15dEfd78f2038c36FA73D443B7',
 
   // TODO
   // [ChainId.EVMOS]: '',
@@ -207,6 +215,7 @@ export const ROUTER_ADDRESS: AddressMap = {
 export const BAR_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xD39e4C415B5087bdC90D1343ac7F7e30c3847517',
   [ChainId.GÖRLI]: '0xc0ad57AEE174D6924E7a8a848c763D09032a1172',
+  [ChainId.SEPOLIA]: '0xa1e386c778ECB4911f2Db2039d05deDc98f223dB',
 
   // TODO
   // [ChainId.EVMOS]: '',
@@ -218,6 +227,7 @@ export const BAR_ADDRESS: AddressMap = {
 export const CHEF_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xB6e706784d5e60F967e2680B0BF08fbe17E32a7A',
   [ChainId.GÖRLI]: '0x3485EAE811F63E480eF5cC7CE245Cf33Ae13cC86',
+  [ChainId.SEPOLIA]: '0xA6f571504eb6F6d49E540099431741Ec956dDf69',
 
   // TODO
   // [ChainId.EVMOS]: '',
@@ -230,6 +240,7 @@ export const CHEF_ADDRESS: AddressMap = {
 export const MAKER_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0x708625b300D043c7f3e14409BA38b7AD7C44126C',
   [ChainId.GÖRLI]: '0x5648F8fb9D9Cb02deD472De2DADd2fBe9DB24757',
+  [ChainId.SEPOLIA]: '0x349c7328c4f193df57264d7d384f5bEA52105cc7',
 
   // TODO
   // [ChainId.EVMOS]: '',
@@ -331,11 +342,13 @@ export const MULTICALL2_ADDRESS: AddressMap = {
   // [ChainId.EVMOS]: '',
   [ChainId.EVMOS_TESTNET]: '0x041Cfe5c38DA68A5837774390DFb4f729286D3B2',
 
+  [ChainId.SEPOLIA]: '0xB57723FF59b0f0620442db97ecFC01B5019fa439',
   [ChainId.HYPERSPACE]: '',
 }
 
 export const MULTICALL3_ADDRESS: AddressMap = {
   [ChainId.GÖRLI]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0x29634829f684f5a214A1b24F168dA0ca738aF2Cb',
   [ChainId.HYPERSPACE]: '',
 }
 

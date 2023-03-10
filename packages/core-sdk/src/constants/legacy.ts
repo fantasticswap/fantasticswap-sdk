@@ -9,6 +9,8 @@ export const INIT_CODE_HASH: { [chainId: number]: string } = {
     '0xf4143956db9966f38b4e9578159e703449ce2ecd76de2ce06fbe5a30aabbed40',
   [ChainId.GÖRLI]:
     '0xf4143956db9966f38b4e9578159e703449ce2ecd76de2ce06fbe5a30aabbed40',
+  [ChainId.SEPOLIA]:
+    '0xf4143956db9966f38b4e9578159e703449ce2ecd76de2ce06fbe5a30aabbed40',
   [ChainId.HYPERSPACE]:
     '0xf4143956db9966f38b4e9578159e703449ce2ecd76de2ce06fbe5a30aabbed40',
 }
